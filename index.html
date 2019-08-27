@@ -7,10 +7,10 @@ class driver
 	driver(java.util.Scanner s){ 
 		l: for(;;){ 
 			p(0,1,r(48,1));
-			for(int a=0;a\<7;p(1,1,r(7+(a<1?0:l(Math.log(a-.99)/3+5.1,-1)),0)+t[a++]));
+			for(int a=0;a<7;p(1,1,r(7+(a<1?0:l(Math.log(a-.99)/3+5.1,-1)),0)+t[a++]));
 			
 			p(0,1,r(01,1));
-			for(int n=0;n\<45;p(n%9\>7?0:1,1,r(n%9<1?8:0,0)+g(l(n/9,-1),y[n%9])+r(n++%9!=2?14:2,0)));
+			for(int n=0;n<45;p(n%9>7?0:1,1,r(n%9<1?8:0,0)+g(l(n/9,-1),y[n%9])+r(n++%9!=2?14:2,0)));
 			
 			switch((x[10] = s.nextLine())) { 
 				case "quit": break l; 
@@ -22,16 +22,16 @@ class driver
 	} 
 	String g(int l,int i){ 
 		return 
-		""+(i\>9?r(5,0):x[l(""+l(0x504D45C6L,i)+l(0x7A8136CAL,i)+l(0x9D714A5AL,i)+l(0xA012478DL,i)+l(0x5647BB5BL,i),l)]); 
+		""+(i>9?r(5,0):x[l(""+l(0x504D45C6L,i)+l(0x7A8136CAL,i)+l(0x9D714A5AL,i)+l(0xA012478DL,i)+l(0x5647BB5BL,i),l)]); 
 	} 
-	\<f\>int l(f s, int b){
-		return(int)(double)(new Double(""+(b\<0?s:(""+s).charAt(b))));
+	<f>int l(f s, int b){
+		return(int)(double)(new Double(""+(b<0?s:(""+s).charAt(b))));
 	}
 	String r(int a, int b){
-		return new String(new char[a]).replace("\\0",(b\<1?" ":"\\n"));
+		return new String(new char[a]).replace("\0",(b\<1?" ":"\n"));
 	}
 	\<f\>void p(int a,int n,f s){
-		for(;n--\>0;System.out.print(s+(a\<1?"\n":"")));
+		for(;n-->0;System.out.print(s+(a<1?"\n":"")));
 	} 
 	String[]s(String a){
 		return a.split(" ");
