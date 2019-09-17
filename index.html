@@ -1,4 +1,5 @@
-<pre>
+<code>
+
 class driver 
 { 
 	public static void main(String[] a){ 
@@ -28,9 +29,9 @@ class driver
 		return(int)(double)(new Double(""+(b<0?s:(""+s).charAt(b))));
 	}
 	String r(int a, int b){
-		return new String(new char[a]).replace("\0",(b\<1?" ":"\n"));
+		return new String(new char[a]).replace("\0",(b<1?" ":"\n"));
 	}
-	\<f\>void p(int a,int n,f s){
+	<f>void p(int a,int n,f s){
 		for(;n-->0;System.out.print(s+(a<1?"\n":"")));
 	} 
 	String[]s(String a){
@@ -38,19 +39,26 @@ class driver
 	}  
 	void i(int g,String h){
 		if((h=x[10]).contains(" "))
-		y[g=(b("h")?0:b("s")?1:b("l")?4:b("k")?5:b("1")?7:b("2")?8:b("c")?3:g)]= 
+		y[g=(b(104)?0:b(115)?1:b(108)?4:b(107)?5:b(49)?7:b(50)?8:b(99)?3:g)]= 
 		l(s(h)[1],-1)-(g==3?(y[2]=l(s(h)[1],-1)/10)*10:0); 
 	}
 
-	boolean b(String a){
-		return s(x[10])[0].equals(a);
+	boolean b(int a){
+		return s(x[10])[0].equals(""+(char)a);
 	} 
 	
-	String[] 
+	String bui(char[] inp) {return new String(inp);}
+	
+	String[]
 	x={"@ @  "," @@@ ","@   @"," @@  ","@@@@@","    @","  @  ","@@@@ ","@    "," @@@ ",""}, 
 	t={"[H]EALTH"," [S]TRENGTH","   [C]OINS"," [L]IVES","[K]EYS"," [R]OLL:","COUNTER: [1] [2]"}; 
+	
+	char[][] 
+	xx = {{64,32,64,32,32}, {32,64,64,64,32}, {64,32,32,32,64}, {32,64,64,32,32}, {64,64,64,64,64},
+		  {32,32,32,32,64}, {32,32,64,32,32}, {64,64,64,64,32}, {64,32,32,32,32}, {32,64,64,64,32}, {}},
+	xt = {}; // 
 	
 	int[] 
 	y={2,1,0,3,4,0,10,10,10,0};
 } 
-</pre>
+</code>
